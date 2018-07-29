@@ -3,6 +3,7 @@ const route = require('express').Router()
 
 route.get('/',(req,res) =>
 {
+    // Means when get request comes on this path from shop.js then send products as response
     // We'll get all the products here
 
     Product.findAll()
